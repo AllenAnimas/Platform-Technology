@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where You At App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css" />
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <div class="header">
+            <img src="logo.gif" alt="Logo" class="logo">
+            <h1>Where You At?</h1>
+        </div>
+        <div class="form-group">
+            <input type="text" id="location-input" placeholder="Enter a location" />
+            <button id="add-location">Add Location</button>
+        </div>
+        <div id="map"></div>
+        <div id="locations-checklist">
+            <h2>Locations:</h2>
+            <ul id="checklist"></ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
